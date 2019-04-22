@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>GlitchedPolygons.RepositoryPattern.MongoDB</AssemblyName>
+    <RootNamespace>GlitchedPolygons.RepositoryPattern.MongoDB</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Glitched Polygons</Authors>
+    <Description>Abstract MongoDB repository base class.</Description>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/GlitchedPolygons/RepositoryPattern/master/icon.png</PackageIconUrl>
+    <PackageTags>c# repository design pattern base interface declaration db database access abstraction repositories nosql mongo mongodb green leaf driver document collection</PackageTags>
+    <PackageReleaseNotes />
+    <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/GlitchedPolygons/RepositoryPattern.MongoDB</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\git\glitched-polygons\nuget\RepositoryPattern.MongoDB\RepositoryPattern.MongoDB\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\git\glitched-polygons\nuget\RepositoryPattern.MongoDB\RepositoryPattern.MongoDB\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
+  </ItemGroup>
+
+</Project>

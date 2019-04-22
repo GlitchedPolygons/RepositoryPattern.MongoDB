@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GlitchedPolygons.RepositoryPattern.MongoDB</name>
+    </assembly>
+    <members>
+        <member name="F:RepositoryPattern.MongoDB.MongoDBRepository`1.db">
+            <summary>
+            The underlying Mongo database.
+            </summary>
+        </member>
+        <member name="F:RepositoryPattern.MongoDB.MongoDBRepository`1.collection">
+            <summary>
+            The underlying MongoDB collection.
+            </summary>
+        </member>
+        <member name="M:RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase)">
+            <summary>
+            Creates a new MongoDB repository.
+            </summary>
+            <param name="db">The Mongo database of which you want to create a repository.</param>
+        </member>
+    </members>
+</doc>
