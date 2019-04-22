@@ -9,6 +9,11 @@ using GlitchedPolygons.RepositoryPattern;
 
 namespace RepositoryPattern.MongoDB
 {
+    /// <summary>
+    /// Abstract base class for MongoDB repositories.
+    /// <seealso cref="IRepository{T1, T2}"/>
+    /// </summary>
+    /// <typeparam name="TEntity">The type of entity that this repository will store.</typeparam>
     public abstract class MongoDBRepository<TEntity> : IRepository<TEntity, ObjectId> where TEntity : IEntity<ObjectId>
     {
         /// <summary>
@@ -21,6 +26,8 @@ namespace RepositoryPattern.MongoDB
         /// </summary>
         protected readonly IMongoCollection<TEntity> collection;
 
+        private readonly string typeName;
+
         /// <summary>
         /// Creates a new MongoDB repository.
         /// </summary>
@@ -28,10 +35,11 @@ namespace RepositoryPattern.MongoDB
         protected MongoDBRepository(IMongoDatabase db)
         {
             this.db = db;
-            collection = db.GetCollection<TEntity>(typeof(TEntity).Name);
+            this.typeName = typeof(TEntity).Name;
+            collection = db.GetCollection<TEntity>(typeName);
             if (collection is null)
             {
-                throw new MongoException($"{nameof(MongoDBRepository<TEntity>)}::ctor: ");
+                throw new MongoException($"{nameof(MongoDBRepository<TEntity>)}::ctor: No collection named \"{typeName}\" found in database!");
             }
         }
 
