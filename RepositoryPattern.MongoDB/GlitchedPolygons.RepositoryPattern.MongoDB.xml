@@ -4,21 +4,131 @@
         <name>GlitchedPolygons.RepositoryPattern.MongoDB</name>
     </assembly>
     <members>
-        <member name="F:RepositoryPattern.MongoDB.MongoDBRepository`1.db">
+        <member name="T:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1">
+            <summary>
+            Abstract base class for MongoDB repositories.
+            <seealso cref="T:GlitchedPolygons.RepositoryPattern.IRepository`2"/>
+            </summary>
+            <typeparam name="T">The type of entity that this repository will store.</typeparam>
+        </member>
+        <member name="F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.db">
             <summary>
             The underlying Mongo database.
             </summary>
         </member>
-        <member name="F:RepositoryPattern.MongoDB.MongoDBRepository`1.collection">
+        <member name="F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.collection">
             <summary>
             The underlying MongoDB collection.
             </summary>
         </member>
-        <member name="M:RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase)">
+        <member name="F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.typeName">
+            <summary>
+            The name of the repository's entity type.
+            </summary>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase)">
             <summary>
             Creates a new MongoDB repository.
             </summary>
             <param name="db">The Mongo database of which you want to create a repository.</param>
+        </member>
+        <member name="P:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item(MongoDB.Bson.ObjectId)">
+            <summary>
+            Synchronously gets an entity by its unique identifier.
+            </summary>
+            <param name="id">The entity's unique identifier.</param>
+            <returns>The found entity; <c>null</c> if the entity couldn't be found.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Get(MongoDB.Bson.ObjectId)">
+            <summary>
+            Gets an entity by its unique identifier.
+            </summary>
+            <param name="id">The entity's unique identifier.</param>
+            <returns>The first found <see cref="T:GlitchedPolygons.RepositoryPattern.IEntity`1" />; <c>null</c> if nothing was found.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.GetAll">
+            <summary>
+            Gets all entities from the repository.
+            </summary>
+            <returns>All entities inside the repo.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Finds all entities according to the specified predicate <see cref="T:System.Linq.Expressions.Expression" />.
+            </summary>
+            <param name="predicate">The search predicate (all entities that match the provided conditions will be added to the query's result).</param>
+            <returns>The found entities (<see cref="T:System.Collections.Generic.IEnumerable`1" />).</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.SingleOrDefault(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Gets a single entity from the repo according to the specified predicate condition.<para></para>
+            If 0 or &gt;1 entities are found, <c>null</c> is returned.
+            </summary>
+            <param name="predicate">The search predicate.</param>
+            <returns>Single found entity; <c>null</c> if 0 or &gt;1 entities were found.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Add(`0)">
+            <summary>
+            Adds the specified entity to the data repository.
+            </summary>
+            <param name="entity">The entity to add.</param>
+            <returns>Whether the entity could be added successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds multiple entities at once.
+            </summary>
+            <param name="entities">The entities to add.</param>
+            <returns>Whether the entities were added successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(`0)">
+            <summary>
+            Removes the specified entity.
+            </summary>
+            <param name="entity">The entity to remove.</param>
+            <returns>Whether the entity could be removed successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(MongoDB.Bson.ObjectId)">
+            <summary>
+            Removes the specified entity.
+            </summary>
+            <param name="id">The unique id of the entity to remove.</param>
+            <returns>Whether the entity could be removed successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveAll">
+            <summary>
+            Removes all entities at once from the repository.
+            </summary>
+            <returns>Whether the entities were removed successfully or not. If the repository was already empty, <c>false</c> is returned (because nothing was actually &lt;&lt;removed&gt;&gt; ).</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Removes all entities that match the specified conditions (via the predicate <see cref="T:System.Linq.Expressions.Expression" /> parameter).
+            </summary>
+            <param name="predicate">The predicate <see cref="T:System.Linq.Expressions.Expression" /> that defines which entities should be removed.</param>
+            <returns>Whether the entities were removed successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Removes the range of entities from the repository.
+            </summary>
+            <param name="entities">The entities to remove.</param>
+            <returns>Whether the entities were removed successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})">
+            <summary>
+            Removes the range of entities from the repository.
+            </summary>
+            <param name="ids">The unique ids of the entities to remove.</param>
+            <returns>Whether all entities were removed successfully or not.</returns>
+        </member>
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Update(`0)">
+            <summary>
+            Updates the specified entity.
+            </summary>
+            <param name="entity">The entity to update.</param>
+            <returns>Whether the entity could be updated successfully or not.</returns>
         </member>
     </members>
 </doc>
