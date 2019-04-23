@@ -26,23 +26,24 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         protected readonly IMongoCollection<T> collection;
 
         /// <summary>
-        /// The name of the repository's entity type.
+        /// The name of the repository's underlying MongoDB collection.
         /// </summary>
-        protected readonly string typeName;
+        public string CollectionName { get; }
 
         /// <summary>
         /// Creates a new MongoDB repository.
         /// </summary>
         /// <param name="db">The Mongo database of which you want to create a repository.</param>
-        protected MongoDBRepository(IMongoDatabase db)
+        /// <param name="collectionName">Optional custom name for the underlying MongoDB collection. If left out, the entity's name is used.</param>
+        protected MongoDBRepository(IMongoDatabase db, string collectionName = null)
         {
             this.db = db;
-            this.typeName = typeof(T).Name;
+            CollectionName = string.IsNullOrEmpty(collectionName) ? typeof(T).Name : collectionName;
 
-            collection = db.GetCollection<T>(typeName);
+            collection = db.GetCollection<T>(CollectionName);
             if (collection is null)
             {
-                throw new MongoException($"{nameof(MongoDBRepository<T>)}::ctor: No collection named \"{typeName}\" found in database!");
+                throw new MongoException($"{nameof(MongoDBRepository<T>)}::ctor: No collection named \"{CollectionName}\" found in database!");
             }
         }
 
