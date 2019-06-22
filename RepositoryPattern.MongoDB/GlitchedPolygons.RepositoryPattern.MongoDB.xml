@@ -21,16 +21,17 @@
             The underlying MongoDB collection.
             </summary>
         </member>
-        <member name="F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName">
+        <member name="P:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName">
             <summary>
-            The name of the repository's entity type.
+            The name of the repository's underlying MongoDB collection.
             </summary>
         </member>
-        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase)">
+        <member name="M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase,System.String)">
             <summary>
             Creates a new MongoDB repository.
             </summary>
             <param name="db">The Mongo database of which you want to create a repository.</param>
+            <param name="collectionName">Optional custom name for the underlying MongoDB collection. If left out, the entity's name is used.</param>
         </member>
         <member name="P:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item(MongoDB.Bson.ObjectId)">
             <summary>

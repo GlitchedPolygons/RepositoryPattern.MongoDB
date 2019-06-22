@@ -8,12 +8,12 @@
     <Authors>Glitched Polygons</Authors>
     <Description>Abstract MongoDB repository base class.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageIconUrl>https://raw.githubusercontent.com/GlitchedPolygons/RepositoryPattern/master/icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/GlitchedPolygons/RepositoryPattern/4d8816f64c600fcfb30d1f93d4bd2354d7f6df40/icon.png</PackageIconUrl>
     <PackageTags>c# repository design pattern base interface declaration db database access abstraction repositories nosql mongo mongodb green leaf driver document collection</PackageTags>
     <PackageReleaseNotes />
     <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/RepositoryPattern.MongoDB</RepositoryUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
