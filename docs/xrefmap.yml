@@ -1,0 +1,286 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB
+  name: GlitchedPolygons.RepositoryPattern.MongoDB
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.html
+  commentId: N:GlitchedPolygons.RepositoryPattern.MongoDB
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB
+  nameWithType: GlitchedPolygons.RepositoryPattern.MongoDB
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1
+  name: MongoDBRepository<T>
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html
+  commentId: T:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1
+  name.vb: MongoDBRepository(Of T)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T)
+  nameWithType: MongoDBRepository<T>
+  nameWithType.vb: MongoDBRepository(Of T)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase,System.String)
+  name: MongoDBRepository(IMongoDatabase, String)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1__ctor_MongoDB_Driver_IMongoDatabase_System_String_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDatabase,System.String)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.MongoDBRepository(MongoDB.Driver.IMongoDatabase, System.String)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).MongoDBRepository(MongoDB.Driver.IMongoDatabase, System.String)
+  nameWithType: MongoDBRepository<T>.MongoDBRepository(IMongoDatabase, String)
+  nameWithType.vb: MongoDBRepository(Of T).MongoDBRepository(IMongoDatabase, String)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor*
+  name: MongoDBRepository
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1__ctor_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.#ctor
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.MongoDBRepository
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).MongoDBRepository
+  nameWithType: MongoDBRepository<T>.MongoDBRepository
+  nameWithType.vb: MongoDBRepository(Of T).MongoDBRepository
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Add(`0)
+  name: Add(T)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Add__0_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Add(`0)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Add(T)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Add(T)
+  nameWithType: MongoDBRepository<T>.Add(T)
+  nameWithType.vb: MongoDBRepository(Of T).Add(T)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Add*
+  name: Add
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Add_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Add
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Add
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Add
+  nameWithType: MongoDBRepository<T>.Add
+  nameWithType.vb: MongoDBRepository(Of T).Add
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name: AddRange(IEnumerable<T>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: AddRange(IEnumerable(Of T))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MongoDBRepository<T>.AddRange(IEnumerable<T>)
+  nameWithType.vb: MongoDBRepository(Of T).AddRange(IEnumerable(Of T))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.AddRange*
+  name: AddRange
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_AddRange_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.AddRange
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.AddRange
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).AddRange
+  nameWithType: MongoDBRepository<T>.AddRange
+  nameWithType.vb: MongoDBRepository(Of T).AddRange
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.collection
+  name: collection
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_collection
+  commentId: F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.collection
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.collection
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).collection
+  nameWithType: MongoDBRepository<T>.collection
+  nameWithType.vb: MongoDBRepository(Of T).collection
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName
+  name: CollectionName
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_CollectionName
+  commentId: P:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.CollectionName
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).CollectionName
+  nameWithType: MongoDBRepository<T>.CollectionName
+  nameWithType.vb: MongoDBRepository(Of T).CollectionName
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName*
+  name: CollectionName
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_CollectionName_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.CollectionName
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.CollectionName
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).CollectionName
+  nameWithType: MongoDBRepository<T>.CollectionName
+  nameWithType.vb: MongoDBRepository(Of T).CollectionName
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.db
+  name: db
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_db
+  commentId: F:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.db
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.db
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).db
+  nameWithType: MongoDBRepository<T>.db
+  nameWithType.vb: MongoDBRepository(Of T).db
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name: Find(Expression<Func<T, Boolean>>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Find_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name.vb: Find(Expression(Of Func(Of T, Boolean)))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Find(System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Find(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)))
+  nameWithType: MongoDBRepository<T>.Find(Expression<Func<T, Boolean>>)
+  nameWithType.vb: MongoDBRepository(Of T).Find(Expression(Of Func(Of T, Boolean)))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Find*
+  name: Find
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Find_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Find
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Find
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Find
+  nameWithType: MongoDBRepository<T>.Find
+  nameWithType.vb: MongoDBRepository(Of T).Find
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Get(MongoDB.Bson.ObjectId)
+  name: Get(ObjectId)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Get_MongoDB_Bson_ObjectId_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Get(MongoDB.Bson.ObjectId)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Get(MongoDB.Bson.ObjectId)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Get(MongoDB.Bson.ObjectId)
+  nameWithType: MongoDBRepository<T>.Get(ObjectId)
+  nameWithType.vb: MongoDBRepository(Of T).Get(ObjectId)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Get*
+  name: Get
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Get_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Get
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Get
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Get
+  nameWithType: MongoDBRepository<T>.Get
+  nameWithType.vb: MongoDBRepository(Of T).Get
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.GetAll
+  name: GetAll()
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_GetAll
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.GetAll
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.GetAll()
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).GetAll()
+  nameWithType: MongoDBRepository<T>.GetAll()
+  nameWithType.vb: MongoDBRepository(Of T).GetAll()
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.GetAll*
+  name: GetAll
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_GetAll_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.GetAll
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.GetAll
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).GetAll
+  nameWithType: MongoDBRepository<T>.GetAll
+  nameWithType.vb: MongoDBRepository(Of T).GetAll
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item(MongoDB.Bson.ObjectId)
+  name: Item[ObjectId]
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Item_MongoDB_Bson_ObjectId_
+  commentId: P:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item(MongoDB.Bson.ObjectId)
+  name.vb: Item(ObjectId)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Item[MongoDB.Bson.ObjectId]
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Item(MongoDB.Bson.ObjectId)
+  nameWithType: MongoDBRepository<T>.Item[ObjectId]
+  nameWithType.vb: MongoDBRepository(Of T).Item(ObjectId)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item*
+  name: Item
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Item_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Item
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Item
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Item
+  nameWithType: MongoDBRepository<T>.Item
+  nameWithType.vb: MongoDBRepository(Of T).Item
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(`0)
+  name: Remove(T)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Remove__0_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(`0)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Remove(T)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Remove(T)
+  nameWithType: MongoDBRepository<T>.Remove(T)
+  nameWithType.vb: MongoDBRepository(Of T).Remove(T)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(MongoDB.Bson.ObjectId)
+  name: Remove(ObjectId)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Remove_MongoDB_Bson_ObjectId_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove(MongoDB.Bson.ObjectId)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Remove(MongoDB.Bson.ObjectId)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Remove(MongoDB.Bson.ObjectId)
+  nameWithType: MongoDBRepository<T>.Remove(ObjectId)
+  nameWithType.vb: MongoDBRepository(Of T).Remove(ObjectId)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove*
+  name: Remove
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Remove_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Remove
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Remove
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Remove
+  nameWithType: MongoDBRepository<T>.Remove
+  nameWithType.vb: MongoDBRepository(Of T).Remove
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveAll
+  name: RemoveAll()
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveAll
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveAll
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveAll()
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveAll()
+  nameWithType: MongoDBRepository<T>.RemoveAll()
+  nameWithType.vb: MongoDBRepository(Of T).RemoveAll()
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveAll*
+  name: RemoveAll
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveAll_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveAll
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveAll
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveAll
+  nameWithType: MongoDBRepository<T>.RemoveAll
+  nameWithType.vb: MongoDBRepository(Of T).RemoveAll
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+  name: RemoveRange(IEnumerable<T>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveRange_System_Collections_Generic_IEnumerable__0__
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+  name.vb: RemoveRange(IEnumerable(Of T))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveRange(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: MongoDBRepository<T>.RemoveRange(IEnumerable<T>)
+  nameWithType.vb: MongoDBRepository(Of T).RemoveRange(IEnumerable(Of T))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})
+  name: RemoveRange(IEnumerable<ObjectId>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveRange_System_Collections_Generic_IEnumerable_MongoDB_Bson_ObjectId__
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})
+  name.vb: RemoveRange(IEnumerable(Of ObjectId))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveRange(System.Collections.Generic.IEnumerable<MongoDB.Bson.ObjectId>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveRange(System.Collections.Generic.IEnumerable(Of MongoDB.Bson.ObjectId))
+  nameWithType: MongoDBRepository<T>.RemoveRange(IEnumerable<ObjectId>)
+  nameWithType.vb: MongoDBRepository(Of T).RemoveRange(IEnumerable(Of ObjectId))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name: RemoveRange(Expression<Func<T, Boolean>>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveRange_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name.vb: RemoveRange(Expression(Of Func(Of T, Boolean)))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveRange(System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveRange(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)))
+  nameWithType: MongoDBRepository<T>.RemoveRange(Expression<Func<T, Boolean>>)
+  nameWithType.vb: MongoDBRepository(Of T).RemoveRange(Expression(Of Func(Of T, Boolean)))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange*
+  name: RemoveRange
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_RemoveRange_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.RemoveRange
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.RemoveRange
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).RemoveRange
+  nameWithType: MongoDBRepository<T>.RemoveRange
+  nameWithType.vb: MongoDBRepository(Of T).RemoveRange
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.SingleOrDefault(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name: SingleOrDefault(Expression<Func<T, Boolean>>)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_SingleOrDefault_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.SingleOrDefault(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+  name.vb: SingleOrDefault(Expression(Of Func(Of T, Boolean)))
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.SingleOrDefault(System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).SingleOrDefault(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)))
+  nameWithType: MongoDBRepository<T>.SingleOrDefault(Expression<Func<T, Boolean>>)
+  nameWithType.vb: MongoDBRepository(Of T).SingleOrDefault(Expression(Of Func(Of T, Boolean)))
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.SingleOrDefault*
+  name: SingleOrDefault
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_SingleOrDefault_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.SingleOrDefault
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.SingleOrDefault
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).SingleOrDefault
+  nameWithType: MongoDBRepository<T>.SingleOrDefault
+  nameWithType.vb: MongoDBRepository(Of T).SingleOrDefault
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Update(`0)
+  name: Update(T)
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Update__0_
+  commentId: M:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Update(`0)
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Update(T)
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Update(T)
+  nameWithType: MongoDBRepository<T>.Update(T)
+  nameWithType.vb: MongoDBRepository(Of T).Update(T)
+- uid: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Update*
+  name: Update
+  href: api/GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository-1.html#GlitchedPolygons_RepositoryPattern_MongoDB_MongoDBRepository_1_Update_
+  commentId: Overload:GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository`1.Update
+  isSpec: "True"
+  fullName: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository<T>.Update
+  fullName.vb: GlitchedPolygons.RepositoryPattern.MongoDB.MongoDBRepository(Of T).Update
+  nameWithType: MongoDBRepository<T>.Update
+  nameWithType.vb: MongoDBRepository(Of T).Update
