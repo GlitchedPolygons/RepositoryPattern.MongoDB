@@ -4,7 +4,7 @@
 # RepositoryPattern.MongoDB
 ## Abstract base class for MongoDB repositories. 
 
-Makes use of the https://github.com/GlitchedPolygons/RepositoryPattern package.
+### Makes use of the https://github.com/GlitchedPolygons/RepositoryPattern package.
 ---
 
 _More information regarding MongoDB itself can be found on www.mongodb.com_
