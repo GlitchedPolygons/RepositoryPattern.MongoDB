@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 
 using MongoDB.Bson;
@@ -73,8 +74,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>All entities inside the repo.</returns>
         public Task<IEnumerable<T>> GetAll()
         {
-            IEnumerable<T> r = collection.AsQueryable().ToEnumerable();
-            return Task.FromResult(r);
+            return Task.FromResult(collection.AsQueryable().ToEnumerable());
         }
 
         /// <summary>
@@ -192,27 +192,9 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// </summary>
         /// <param name="entities">The entities to remove.</param>
         /// <returns>Whether the entities were removed successfully or not.</returns>
-        public async Task<bool> RemoveRange(IEnumerable<T> entities)
+        public Task<bool> RemoveRange(IEnumerable<T> entities)
         {
-            if (entities is null)
-            {
-                return false;
-            }
-
-            bool success = true;
-            var tasks = new List<Task>(8);
-            foreach (T entity in entities)
-            {
-                tasks.Add(Task.Run(() =>
-                {
-                    if (!collection.DeleteOne(u => u.Id == entity.Id).IsAcknowledged)
-                    {
-                        success = false;
-                    }
-                }));
-            }
-            await Task.WhenAll(tasks);
-            return success;
+            return RemoveRange(entities.Select(i => i.Id));
         }
 
         /// <summary>
@@ -227,20 +209,9 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
                 return false;
             }
 
-            bool success = true;
-            var tasks = new List<Task>(8);
-            foreach (ObjectId id in ids)
-            {
-                tasks.Add(Task.Run(() =>
-                {
-                    if (!collection.DeleteOne(u => u.Id == id).IsAcknowledged)
-                    {
-                        success = false;
-                    }
-                }));
-            }
-            await Task.WhenAll(tasks);
-            return success;
+            var filter = Builders<T>.Filter.In("_id", ids);
+            var r = await collection.DeleteManyAsync(filter);
+            return r.IsAcknowledged;
         }
 
         #endregion
