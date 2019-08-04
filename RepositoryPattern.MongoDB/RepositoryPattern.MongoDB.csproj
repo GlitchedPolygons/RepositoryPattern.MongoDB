@@ -17,11 +17,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\git\glitched-polygons\nuget\RepositoryPattern.MongoDB\RepositoryPattern.MongoDB\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\git\glitched-polygons\nuget\RepositoryPattern.MongoDB\RepositoryPattern.MongoDB\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
