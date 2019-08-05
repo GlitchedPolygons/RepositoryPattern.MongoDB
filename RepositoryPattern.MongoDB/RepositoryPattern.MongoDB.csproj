@@ -2,18 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>GlitchedPolygons.RepositoryPattern.MongoDB</Title>
     <AssemblyName>GlitchedPolygons.RepositoryPattern.MongoDB</AssemblyName>
     <RootNamespace>GlitchedPolygons.RepositoryPattern.MongoDB</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Glitched Polygons</Authors>
     <Description>Abstract MongoDB repository base class.</Description>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIconUrl>https://raw.githubusercontent.com/GlitchedPolygons/RepositoryPattern/4d8816f64c600fcfb30d1f93d4bd2354d7f6df40/icon.png</PackageIconUrl>
     <PackageTags>c# repository design pattern base interface declaration db database access abstraction repositories nosql mongo mongodb green leaf driver document collection</PackageTags>
     <PackageReleaseNotes />
     <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/RepositoryPattern.MongoDB</RepositoryUrl>
-    <Version>1.0.3</Version>
+    <PackageVersion>1.0.6</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -27,12 +28,12 @@
   <ItemGroup>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath />
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.4" />
+    <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.6" />
     <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
   </ItemGroup>
 
