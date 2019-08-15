@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern.MongoDB", "RepositoryPattern.MongoDB\RepositoryPattern.MongoDB.csproj", "{7FDF95C8-1FC3-4D9D-BAEF-D48BB99637BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryPattern.MongoDB", "src\RepositoryPattern.MongoDB.csproj", "{7FDF95C8-1FC3-4D9D-BAEF-D48BB99637BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@
         {
     	  "src":"../..",
           "files": [
-            "RepositoryPattern.MongoDB/**.csproj"
+            "src/**.csproj"
           ]
         }
       ],
