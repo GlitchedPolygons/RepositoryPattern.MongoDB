@@ -9,7 +9,6 @@
     <Authors>Glitched Polygons</Authors>
     <Description>Abstract MongoDB repository base class.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIconUrl>https://raw.githubusercontent.com/GlitchedPolygons/RepositoryPattern/4d8816f64c600fcfb30d1f93d4bd2354d7f6df40/icon.png</PackageIconUrl>
     <PackageTags>c# repository design pattern base interface declaration db database access abstraction repositories nosql mongo mongodb green leaf driver document collection</PackageTags>
     <PackageReleaseNotes />
     <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
@@ -36,5 +35,14 @@
     <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.6" />
     <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
   </ItemGroup>
+
+
+<PropertyGroup>
+  <PackageIcon>icon.png</PackageIcon>
+</PropertyGroup>
+
+<ItemGroup>
+  <None Include="icon.png" Pack="true" PackagePath="\"/>
+</ItemGroup>
 
 </Project>
