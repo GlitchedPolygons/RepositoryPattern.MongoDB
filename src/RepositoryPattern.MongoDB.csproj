@@ -13,19 +13,21 @@
     <PackageReleaseNotes />
     <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/RepositoryPattern.MongoDB</RepositoryUrl>
-    <PackageVersion>1.0.6</PackageVersion>
+    <PackageVersion>1.0.7</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard2.0\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\GlitchedPolygons.RepositoryPattern.MongoDB.xml</DocumentationFile>
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE.txt">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath />
     </None>
@@ -33,7 +35,7 @@
 
   <ItemGroup>
     <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.6" />
-    <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
   </ItemGroup>
 
 
@@ -42,7 +44,7 @@
 </PropertyGroup>
 
 <ItemGroup>
-  <None Include="icon.png" Pack="true" PackagePath="\"/>
+  <None Include="icon.png" Pack="true" PackagePath="\" />
 </ItemGroup>
 
 </Project>

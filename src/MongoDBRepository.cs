@@ -64,8 +64,8 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>The first found <see cref="T:GlitchedPolygons.RepositoryPattern.IEntity`1" />; <c>null</c> if nothing was found.</returns>
         public async Task<T> Get(ObjectId id)
         {
-            IAsyncCursor<T> cursor = await collection.FindAsync(u => u.Id == id);
-            return await cursor.FirstOrDefaultAsync();
+            IAsyncCursor<T> cursor = await collection.FindAsync(u => u.Id == id).ConfigureAwait(false);
+            return await cursor.FirstOrDefaultAsync().ConfigureAwait(false);
         }
 
         /// <summary>
@@ -84,7 +84,8 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>The found entities (<see cref="T:System.Collections.Generic.IEnumerable`1" />).</returns>
         public async Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate)
         {
-            return (await collection.FindAsync(predicate)).ToEnumerable();
+            IAsyncCursor<T> cursor = await collection.FindAsync(predicate).ConfigureAwait(false);
+            return cursor.ToEnumerable();
         }
 
         /// <summary>
@@ -95,7 +96,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>Single found entity; <c>null</c> if 0 or &gt;1 entities were found.</returns>
         public async Task<T> SingleOrDefault(Expression<Func<T, bool>> predicate)
         {
-            IAsyncCursor<T> cursor = await collection.FindAsync(predicate);
+            IAsyncCursor<T> cursor = await collection.FindAsync(predicate).ConfigureAwait(false);
             return await cursor.SingleOrDefaultAsync();
         }
 
@@ -112,10 +113,10 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         {
             try
             {
-                await collection.InsertOneAsync(entity);
+                await collection.InsertOneAsync(entity).ConfigureAwait(false);
                 return true;
             }
-            catch (Exception)
+            catch
             {
                 return false;
             }
@@ -130,10 +131,10 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         {
             try
             {
-                await collection.InsertManyAsync(entities);
+                await collection.InsertManyAsync(entities).ConfigureAwait(false);
                 return true;
             }
-            catch (Exception)
+            catch
             {
                 return false;
             }
@@ -150,7 +151,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>Whether the entity could be removed successfully or not.</returns>
         public async Task<bool> Remove(T entity)
         {
-            var r = await collection.DeleteOneAsync(u => u.Id == entity.Id);
+            DeleteResult r = await collection.DeleteOneAsync(u => u.Id == entity.Id).ConfigureAwait(false);
             return r.IsAcknowledged;
         }
 
@@ -161,7 +162,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>Whether the entity could be removed successfully or not.</returns>
         public async Task<bool> Remove(ObjectId id)
         {
-            var r = await collection.DeleteOneAsync(u => u.Id == id);
+            DeleteResult r = await collection.DeleteOneAsync(u => u.Id == id).ConfigureAwait(false);
             return r.IsAcknowledged;
         }
 
@@ -172,7 +173,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <exception cref="NotImplementedException"></exception>
         public async Task<bool> RemoveAll()
         {
-            var r = await collection.DeleteManyAsync(FilterDefinition<T>.Empty);
+            DeleteResult r = await collection.DeleteManyAsync(FilterDefinition<T>.Empty).ConfigureAwait(false);
             return r.IsAcknowledged;
         }
 
@@ -183,7 +184,7 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
         /// <returns>Whether the entities were removed successfully or not.</returns>
         public async Task<bool> RemoveRange(Expression<Func<T, bool>> predicate)
         {
-            var r = await collection.DeleteManyAsync(predicate);
+            DeleteResult r = await collection.DeleteManyAsync(predicate).ConfigureAwait(false);
             return r.IsAcknowledged;
         }
 
@@ -209,8 +210,8 @@ namespace GlitchedPolygons.RepositoryPattern.MongoDB
                 return false;
             }
 
-            var filter = Builders<T>.Filter.In("_id", ids);
-            var r = await collection.DeleteManyAsync(filter);
+            FilterDefinition<T> f = Builders<T>.Filter.In("_id", ids);
+            DeleteResult r = await collection.DeleteManyAsync(f).ConfigureAwait(false);
             return r.IsAcknowledged;
         }
 
