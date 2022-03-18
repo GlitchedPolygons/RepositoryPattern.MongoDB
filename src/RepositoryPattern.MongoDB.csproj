@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Title>GlitchedPolygons.RepositoryPattern.MongoDB</Title>
     <AssemblyName>GlitchedPolygons.RepositoryPattern.MongoDB</AssemblyName>
     <RootNamespace>GlitchedPolygons.RepositoryPattern.MongoDB</RootNamespace>
@@ -13,7 +13,8 @@
     <PackageReleaseNotes />
     <PackageProjectUrl>https://github.com/GlitchedPolygons/RepositoryPattern</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GlitchedPolygons/RepositoryPattern.MongoDB</RepositoryUrl>
-    <PackageVersion>1.0.7</PackageVersion>
+    <PackageVersion>1.0.8</PackageVersion>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -35,7 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.6" />
-    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
   </ItemGroup>
 
 
