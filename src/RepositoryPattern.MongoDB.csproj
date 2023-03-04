@@ -36,7 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="GlitchedPolygons.RepositoryPattern" Version="1.0.6" />
-    <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
   </ItemGroup>
 
 
